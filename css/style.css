@@ -531,7 +531,7 @@ body {
 }
 
 .poem-item.open .poem-body {
-  max-height: 3000px;
+  max-height: 6000px;
 }
 
 .poem-text {
