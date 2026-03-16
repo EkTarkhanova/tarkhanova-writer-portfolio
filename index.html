@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Екатерина Тарханова — Сценарист</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">КТ</a>
+    <ul class="nav-links">
+      <li><a href="#stories">Истории</a></li>
+      <li><a href="#poetry">Поэзия</a></li>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#contact" class="nav-cta">Связаться</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-label">Сценарист · Автор · Визуальные новеллы</p>
+      <h1 class="hero-title">
+        <span class="line" data-text="Екатерина">Екатерина</span>
+        <span class="line italic" data-text="Тарханова">Тарханова</span>
+      </h1>
+      <p class="hero-desc">Пишу истории, в которых выборы имеют значение.<br>Создаю персонажей, которых не забываешь.</p>
+    </div>
+    <div class="hero-scroll">
+      <span>прокрути вниз</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-deco">
+      <svg viewBox="0 0 100 200" class="hero-ink">
+        <path d="M50 0 Q80 50 50 100 Q20 150 50 200" stroke="currentColor" fill="none" stroke-width="0.5"/>
+        <circle cx="50" cy="0" r="2" fill="currentColor"/>
+        <circle cx="50" cy="200" r="2" fill="currentColor"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Stories section -->
+  <section class="section stories-section" id="stories">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Визуальные<br><em>истории</em></h2>
+      <p class="section-desc">Интерактивные линейные новеллы — каждая в своём жанре, каждая со своей душой.</p>
+    </div>
+
+    <div class="stories-grid">
+
+      <!-- Story 1 — Восемь городов -->
+      <article class="story-card" data-index="1">
+        <div class="card-bg" style="--hue: 260"></div>
+        <div class="card-number">001</div>
+        <div class="card-tags">
+          <span>Нуар</span>
+          <span>Фэнтези</span>
+          <span>Детектив</span>
+          <span>В процессе</span>
+        </div>
+        <h3 class="card-title">Восемь<br>городов</h3>
+        <div class="card-meta">
+          <div class="card-meta-row">
+            <span class="meta-label">Сеттинг</span>
+            <span class="meta-val">Стимпанк-мегаполис Варт. Восемь изолированных городов, каждый со своими правилами, тайнами и властью.</span>
+          </div>
+          <div class="card-meta-row">
+            <span class="meta-label">Персонажи</span>
+            <span class="meta-val">Рейна Волш — следователь, циничная и несгибаемая. Каэн Каллер — беглый наёмник с чужим именем и чужой жизнью.</span>
+          </div>
+          <div class="card-meta-row">
+            <span class="meta-label">Идея</span>
+            <span class="meta-val">Серийные убийства, ведущие к тайне, которая способна уничтожить всё. Слоуберн между людьми, которые не умеют доверять.</span>
+          </div>
+        </div>
+        <blockquote class="card-quote">
+          «Ствол отделён от ствольной коробки, затвор извлечён и уложен в ложемент. Четыре защёлки кейса сработали в унисон, отсекая звук захлопнувшейся крышки.»
+        </blockquote>
+        <a href="#" class="card-link" data-story="1">Читать историю →</a>
+      </article>
+
+      <!-- Story 2 — placeholder -->
+      <article class="story-card" data-index="2">
+        <div class="card-bg" style="--hue: 320"></div>
+        <div class="card-number">002</div>
+        <div class="card-tags">
+          <span>Романтика</span>
+          <span>Современность</span>
+          <span>Завершена</span>
+        </div>
+        <h3 class="card-title">История<br>вторая</h3>
+        <div class="card-meta">
+          <div class="card-meta-row">
+            <span class="meta-label">Сеттинг</span>
+            <span class="meta-val">Замени это описанием своей истории — города, эпохи, атмосферы.</span>
+          </div>
+          <div class="card-meta-row">
+            <span class="meta-label">Персонажи</span>
+            <span class="meta-val">Кто главные герои? Что движет ими?</span>
+          </div>
+          <div class="card-meta-row">
+            <span class="meta-label">Идея</span>
+            <span class="meta-val">О чём эта история в своей сути?</span>
+          </div>
+        </div>
+        <blockquote class="card-quote">
+          «Твоя цитата из текста — та строчка, которую жалко не показать.»
+        </blockquote>
+        <a href="#" class="card-link">Читать историю →</a>
+      </article>
+
+      <!-- Story 3 — placeholder -->
+      <article class="story-card" data-index="3">
+        <div class="card-bg" style="--hue: 190"></div>
+        <div class="card-number">003</div>
+        <div class="card-tags">
+          <span>Триллер</span>
+          <span>В процессе</span>
+        </div>
+        <h3 class="card-title">История<br>третья</h3>
+        <div class="card-meta">
+          <div class="card-meta-row">
+            <span class="meta-label">Сеттинг</span>
+            <span class="meta-val">Замени это описанием своей истории.</span>
+          </div>
+          <div class="card-meta-row">
+            <span class="meta-label">Персонажи</span>
+            <span class="meta-val">Кто главные герои?</span>
+          </div>
+          <div class="card-meta-row">
+            <span class="meta-label">Идея</span>
+            <span class="meta-val">О чём эта история в своей сути?</span>
+          </div>
+        </div>
+        <blockquote class="card-quote">
+          «Твоя цитата из текста.»
+        </blockquote>
+        <a href="#" class="card-link">Читать историю →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Poetry section -->
+  <section class="section poetry-section" id="poetry">
+    <div class="section-header section-header--right">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Поэзия</h2>
+      <p class="section-desc">Слова, которые не помещаются в прозу.</p>
+    </div>
+
+    <div class="poetry-container">
+      <div class="poetry-list" id="poetryList">
+
+        <!-- Poem 1 -->
+        <div class="poem-item" data-poem="1">
+          <div class="poem-header">
+            <span class="poem-num">—</span>
+            <h3 class="poem-title">Название стихотворения</h3>
+            <span class="poem-toggle">+</span>
+          </div>
+          <div class="poem-body">
+            <div class="poem-text">
+              <p>Замени это своими строками.<br>
+              Это просто шаблон — положи сюда<br>
+              то, что написала сама.</p>
+              <br>
+              <p>Каждый абзац — это строфа.<br>
+              Форматируй как тебе нравится.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poem 2 -->
+        <div class="poem-item" data-poem="2">
+          <div class="poem-header">
+            <span class="poem-num">—</span>
+            <h3 class="poem-title">Второе стихотворение</h3>
+            <span class="poem-toggle">+</span>
+          </div>
+          <div class="poem-body">
+            <div class="poem-text">
+              <p>Здесь твой текст.<br>
+              Столько строк, сколько нужно.</p>
+              <br>
+              <p>Всё что ты хочешь сказать —<br>
+              скажи здесь.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poem 3 -->
+        <div class="poem-item" data-poem="3">
+          <div class="poem-header">
+            <span class="poem-num">—</span>
+            <h3 class="poem-title">Третье стихотворение</h3>
+            <span class="poem-toggle">+</span>
+          </div>
+          <div class="poem-body">
+            <div class="poem-text">
+              <p>Твои слова здесь.<br>
+              Сколько угодно стихотворений —<br>
+              просто скопируй блок poem-item.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="poetry-deco">
+        <div class="poetry-ink"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="section about-section" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Обо мне</h2>
+        <p>Меня зовут Катя. Я пишу истории — про людей, которые ломаются и не сдаются, про любовь, которую страшно назвать вслух, про выборы, за которые платишь всю жизнь.</p>
+        <p>Визуальные новеллы — это мой формат. Я выросла на интерактивных историях и понимаю жанр изнутри. Умею строить слоуберн через деталь, писать диалог через умолчание и делать выбор — настоящим.</p>
+        <p>Параллельно пишу стихи, роман и учусь доверять собственному голосу.</p>
+        <div class="about-tags">
+          <span>Визуальные новеллы</span>
+          <span>Романтический нарратив</span>
+          <span>Детектив · Нуар</span>
+          <span>Поэзия</span>
+          <span>Санкт-Петербург</span>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-frame">
+          <div class="frame-inner">
+            <span class="frame-quote">"Пишу про людей, которые не умеют говорить о том, что чувствуют — но делают это каждым своим действием."</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-content">
+      <span class="section-num">04</span>
+      <h2 class="section-title contact-title">Давайте<br><em>работать</em><br>вместе</h2>
+      <div class="contact-links">
+        <a href="mailto:ekaterinasprt@yandex.ru" class="contact-link">
+          <span class="contact-link-label">Почта</span>
+          <span class="contact-link-val">ekaterinasprt@yandex.ru</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a href="tel:+79106092841" class="contact-link">
+          <span class="contact-link-label">Телефон</span>
+          <span class="contact-link-val">+7 910 609-28-41</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-deco">
+      <p class="contact-big-text">КТ</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2025 Екатерина Тарханова</span>
+    <span>Санкт-Петербург</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
