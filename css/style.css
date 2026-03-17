@@ -347,6 +347,7 @@ body {
     transparent 60%
   );
   transition: opacity 0.5s;
+  pointer-events: none;
 }
 
 .story-card:hover .card-bg {
